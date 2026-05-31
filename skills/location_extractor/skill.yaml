@@ -1,0 +1,28 @@
+name: location_extractor
+version: 0.1.0
+category: extraction
+agent: location_extractor_agent
+always_on: false
+description: >
+  Extracts addresses, store locators and "nearby" qualifiers from scraped
+  HTML pages.
+triggers:
+  keywords:
+    - location
+    - address
+    - nearby
+  always_on: false
+inputs:
+  - scraped_urls
+outputs:
+  - extracted_data.location
+schema:
+  location:
+    address: string
+    city: string
+    country: string
+    lat: number
+    lng: number
+dependencies:
+  - url_scraper
+phase_1_stub: true

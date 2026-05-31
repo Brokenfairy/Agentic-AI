@@ -1,0 +1,13 @@
+name: competitor_analysis
+description: Compare offerings, pricing, and strengths across providers.
+match_terms:
+  - competitor
+  - compare
+  - versus
+required_skills:
+  - query_understanding
+  - url_scraper
+  - price_extractor
+  - rating_extractor
+  - comparison_engine
+  - excel_writer

@@ -1,0 +1,22 @@
+name: query_understanding
+version: 0.1.0
+category: nlu
+agent: supervisor
+always_on: true
+description: >
+  Parses a free-form user query into structured intent (entity, attributes
+  of interest, constraints) used by the supervisor to plan skills.
+triggers:
+  keywords: []
+  always_on: true
+inputs:
+  - original_query
+outputs:
+  - parsed_query
+schema:
+  parsed_query:
+    entity: string
+    attributes: list
+    filters: object
+dependencies: []
+phase_1_stub: true

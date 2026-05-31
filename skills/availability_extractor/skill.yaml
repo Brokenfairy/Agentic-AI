@@ -1,0 +1,23 @@
+name: availability_extractor
+version: 0.1.0
+category: extraction
+agent: availability_extractor_agent
+always_on: false
+description: >
+  Determines stock / availability status from scraped HTML.
+triggers:
+  keywords:
+    - availability
+    - stock
+  always_on: false
+inputs:
+  - scraped_urls
+outputs:
+  - extracted_data.availability
+schema:
+  availability:
+    status: string  # in_stock | out_of_stock | preorder | unknown
+    eta_days: integer
+dependencies:
+  - url_scraper
+phase_1_stub: true

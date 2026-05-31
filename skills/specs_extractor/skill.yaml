@@ -1,0 +1,29 @@
+name: specs_extractor
+version: 0.1.0
+category: extraction
+agent: specs_extractor_agent
+always_on: false
+description: >
+  Extracts structured technical specifications (RAM, CPU, storage, etc.)
+  from a scraped HTML page.
+triggers:
+  keywords:
+    - RAM
+    - processor
+    - specs
+    - storage
+  always_on: false
+inputs:
+  - scraped_urls
+outputs:
+  - extracted_data.specs
+schema:
+  specs:
+    ram: string
+    processor: string
+    storage: string
+    display: string
+    battery: string
+dependencies:
+  - url_scraper
+phase_1_stub: true

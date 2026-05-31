@@ -1,0 +1,20 @@
+name: excel_writer
+version: 0.1.0
+category: output
+agent: excel_writer_agent
+always_on: true
+description: >
+  Aggregates all extracted_data fields into a single Excel workbook in
+  the outputs/ folder.
+triggers:
+  keywords: []
+  always_on: true
+inputs:
+  - extracted_data
+outputs:
+  - excel_path
+schema:
+  excel_path: string
+dependencies:
+  - url_scraper
+phase_1_stub: true

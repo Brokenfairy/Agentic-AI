@@ -1,0 +1,27 @@
+name: price_extractor
+version: 0.1.0
+category: extraction
+agent: price_extractor_agent
+always_on: false
+description: >
+  Extracts price, currency, MRP, and discount info from scraped pages.
+triggers:
+  keywords:
+    - price
+    - cost
+    - amount
+    - rate
+  always_on: false
+inputs:
+  - scraped_urls
+outputs:
+  - extracted_data.price
+schema:
+  price:
+    value: number
+    currency: string
+    mrp: number
+    discount_pct: number
+dependencies:
+  - url_scraper
+phase_1_stub: true

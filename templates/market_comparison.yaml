@@ -1,0 +1,13 @@
+name: market_comparison
+description: Market comparison workflow for price and availability analysis.
+match_terms:
+  - market
+  - comparison
+  - best deal
+required_skills:
+  - query_understanding
+  - url_scraper
+  - price_extractor
+  - availability_extractor
+  - comparison_engine
+  - excel_writer

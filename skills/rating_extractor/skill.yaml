@@ -1,0 +1,25 @@
+name: rating_extractor
+version: 0.1.0
+category: extraction
+agent: rating_extractor_agent
+always_on: false
+description: >
+  Extracts numeric rating, scale and total review count.
+triggers:
+  keywords:
+    - rating
+    - review
+  always_on: false
+inputs:
+  - scraped_urls
+outputs:
+  - extracted_data.rating
+  - extracted_data.review_count
+schema:
+  rating:
+    value: number
+    scale: number
+  review_count: integer
+dependencies:
+  - url_scraper
+phase_1_stub: true

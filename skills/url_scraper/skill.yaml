@@ -1,0 +1,23 @@
+name: url_scraper
+version: 0.1.0
+category: collection
+agent: url_scraper_agent
+always_on: true
+description: >
+  Discovers candidate URLs relevant to the parsed query. Output feeds
+  every extractor skill.
+triggers:
+  keywords: []
+  always_on: true
+inputs:
+  - parsed_query
+outputs:
+  - scraped_urls
+schema:
+  scraped_urls:
+    - url: string
+      source: string
+      score: float
+dependencies:
+  - query_understanding
+phase_1_stub: true

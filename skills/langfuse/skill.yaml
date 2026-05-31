@@ -1,0 +1,37 @@
+name: langfuse
+version: 0.1.0
+category: observability
+agent: langfuse_agent
+always_on: false
+description: >
+  Langfuse observability skill for tracing LLM workflows, capturing spans,
+  generations, scores, and sessions following Langfuse best practices.
+triggers:
+  keywords:
+    - trace
+    - observability
+    - monitoring
+    - langfuse
+  always_on: false
+inputs:
+  - workflow_state
+outputs:
+  - trace_id
+  - trace_url
+  - spans
+schema:
+  trace_id:
+    type: string
+    description: Unique trace identifier
+  trace_url:
+    type: string
+    description: URL to view trace in Langfuse UI
+  spans:
+    type: array
+    description: List of captured spans
+  generations:
+    type: array
+    description: LLM generation observations
+dependencies:
+  - query_understanding
+external_docs: https://langfuse.com/docs/tracing

@@ -1,0 +1,14 @@
+name: product_research
+description: Product research workflow with extraction and reporting.
+match_terms:
+  - iphone
+  - laptop
+  - product
+required_skills:
+  - query_understanding
+  - url_scraper
+  - price_extractor
+  - rating_extractor
+  - specs_extractor
+  - comparison_engine
+  - excel_writer
