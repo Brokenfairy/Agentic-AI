@@ -1,0 +1,8 @@
+name: hotel_discovery_demo
+query: Find top 5 hotels in Goa and compare price, rating, and availability
+expected_skills:
+  - url_scraper
+  - price_extractor
+  - rating_extractor
+  - availability_extractor
+notes: Hotel discovery scenario for travel and availability.

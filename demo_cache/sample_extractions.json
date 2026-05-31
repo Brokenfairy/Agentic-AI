@@ -1,0 +1,13 @@
+{
+  "default": {
+    "price": "Rs. 74,999",
+    "rating": "4.4/5",
+    "availability": "In Stock",
+    "location": "Bangalore, Karnataka, India",
+    "specs": {
+      "ram": "8 GB",
+      "storage": "128 GB",
+      "processor": "A16 Bionic"
+    }
+  }
+}

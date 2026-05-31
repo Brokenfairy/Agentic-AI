@@ -1,0 +1,8 @@
+name: laptop_comparison_demo
+query: Find top 5 gaming laptops under Rs 60000 and extract price, specs, discount, and warranty
+expected_skills:
+  - url_scraper
+  - price_extractor
+  - specs_extractor
+  - comparison_engine
+notes: Laptop comparison scenario with structured specifications.

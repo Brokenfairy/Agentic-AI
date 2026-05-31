@@ -1,0 +1,7 @@
+name: market_comparison_demo
+query: Compare competitor pricing for coffee makers across websites and summarize the best market offer
+expected_skills:
+  - url_scraper
+  - price_extractor
+  - comparison_engine
+notes: Market comparison scenario for enterprise-style benchmarking demos.

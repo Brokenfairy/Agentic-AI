@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0f172a"/>
+  <rect x="40" y="40" width="1120" height="620" rx="24" fill="#111827" stroke="#334155"/>
+  <rect x="70" y="70" width="1060" height="90" rx="18" fill="#1e293b"/>
+  <text x="95" y="120" fill="#f8fafc" font-size="34" font-family="Arial">SkillFlow AI Dashboard</text>
+  <text x="95" y="150" fill="#94a3b8" font-size="18" font-family="Arial">Gemini-first orchestration, YAML-driven agents, replayable traces</text>
+  <rect x="70" y="190" width="620" height="200" rx="20" fill="#172033" stroke="#334155"/>
+  <text x="95" y="225" fill="#f8fafc" font-size="24" font-family="Arial">Workflow Graph</text>
+  <rect x="735" y="190" width="395" height="200" rx="20" fill="#172033" stroke="#334155"/>
+  <text x="760" y="225" fill="#f8fafc" font-size="24" font-family="Arial">Supervisor Reasoning</text>
+  <rect x="70" y="420" width="340" height="190" rx="20" fill="#172033" stroke="#334155"/>
+  <rect x="430" y="420" width="340" height="190" rx="20" fill="#172033" stroke="#334155"/>
+  <rect x="790" y="420" width="340" height="190" rx="20" fill="#172033" stroke="#334155"/>
+  <text x="95" y="455" fill="#f8fafc" font-size="22" font-family="Arial">Observability</text>
+  <text x="455" y="455" fill="#f8fafc" font-size="22" font-family="Arial">YAML Editor</text>
+  <text x="815" y="455" fill="#f8fafc" font-size="22" font-family="Arial">Metrics</text>
+  <circle cx="180" cy="300" r="26" fill="#2563eb"/>
+  <circle cx="320" cy="300" r="26" fill="#16a34a"/>
+  <circle cx="460" cy="300" r="26" fill="#f59e0b"/>
+  <circle cx="600" cy="300" r="26" fill="#dc2626"/>
+  <line x1="206" y1="300" x2="294" y2="300" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="346" y1="300" x2="434" y2="300" stroke="#94a3b8" stroke-width="5"/>
+  <line x1="486" y1="300" x2="574" y2="300" stroke="#94a3b8" stroke-width="5"/>
+  <text x="135" y="345" fill="#cbd5e1" font-size="16" font-family="Arial">Query</text>
+  <text x="265" y="345" fill="#cbd5e1" font-size="16" font-family="Arial">Supervisor</text>
+  <text x="420" y="345" fill="#cbd5e1" font-size="16" font-family="Arial">Agents</text>
+  <text x="555" y="345" fill="#cbd5e1" font-size="16" font-family="Arial">Export</text>
+</svg>

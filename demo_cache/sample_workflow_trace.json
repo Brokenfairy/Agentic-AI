@@ -1,0 +1,44 @@
+{
+  "original_query": "Find top 5 URLs for iPhone 15 and extract price and rating",
+  "provider_name": "gemini",
+  "provider_model": "gemini-2.0-flash",
+  "supervisor_backend": "deepagents",
+  "selected_skills": [
+    "query_understanding",
+    "url_scraper",
+    "price_extractor",
+    "rating_extractor",
+    "excel_writer"
+  ],
+  "workflow_status": "completed",
+  "total_duration_seconds": 2.41,
+  "scraped_urls": [
+    {
+      "title": "Apple iPhone 15 - Amazon.in",
+      "url": "https://www.amazon.in/s?k=iphone-15",
+      "domain": "www.amazon.in"
+    }
+  ],
+  "aggregated_results": {
+    "rows": [
+      {
+        "url": "https://www.amazon.in/s?k=iphone-15",
+        "title": "Apple iPhone 15 - Amazon.in",
+        "domain": "www.amazon.in",
+        "status": "success",
+        "method": "requests",
+        "fallback_used": false,
+        "confidence_score": 0.83,
+        "price": "Rs. 74,999",
+        "rating": "4.4/5"
+      }
+    ],
+    "summary": {
+      "total_urls": 1,
+      "success_count": 1,
+      "fallback_count": 0,
+      "failed_count": 0
+    }
+  },
+  "summary_markdown": "Workflow Execution Summary"
+}

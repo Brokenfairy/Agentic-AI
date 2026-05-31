@@ -1,0 +1,7 @@
+name: restaurant_discovery_demo
+query: Find top 5 restaurants in Bangalore and compare rating and location
+expected_skills:
+  - url_scraper
+  - rating_extractor
+  - location_extractor
+notes: Restaurant discovery scenario for location and ratings.

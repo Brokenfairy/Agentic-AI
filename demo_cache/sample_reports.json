@@ -1,0 +1,9 @@
+{
+  "markdown": "The system discovered 5 URLs, completed 4 successful extractions, and identified Amazon as the lowest-price source.",
+  "exports": {
+    "excel": "outputs/sample_demo.xlsx",
+    "csv": "outputs/sample_demo.csv",
+    "json": "outputs/sample_demo.json",
+    "markdown": "outputs/sample_demo.md"
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#020617"/>
+  <rect x="50" y="50" width="1100" height="400" rx="24" fill="#111827" stroke="#334155"/>
+  <text x="90" y="110" fill="#f8fafc" font-size="34" font-family="Arial">Supervisor Reasoning Panel</text>
+  <text x="90" y="145" fill="#94a3b8" font-size="18" font-family="Arial">Why the supervisor selected or skipped each agent</text>
+  <rect x="90" y="180" width="1020" height="70" rx="14" fill="#172033" stroke="#2563eb"/>
+  <rect x="90" y="270" width="1020" height="70" rx="14" fill="#172033" stroke="#16a34a"/>
+  <rect x="90" y="360" width="1020" height="50" rx="14" fill="#172033" stroke="#f59e0b"/>
+  <text x="120" y="222" fill="#e2e8f0" font-size="22" font-family="Arial">Selected price_extractor because the query matched price-related terms.</text>
+  <text x="120" y="312" fill="#e2e8f0" font-size="22" font-family="Arial">Selected rating_extractor because the query explicitly requested ratings.</text>
+  <text x="120" y="392" fill="#e2e8f0" font-size="20" font-family="Arial">Skipped location_extractor because no location-related terms were detected.</text>
+</svg>
