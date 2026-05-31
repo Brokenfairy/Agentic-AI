@@ -1,0 +1,19 @@
+name: comparison_engine
+description: Compare extracted records and produce ranked recommendations.
+system_prompt: |
+  You are the comparison engine.
+  Compare extracted records, rank them, identify the best deal, and produce a structured comparison report.
+tools:
+  - comparison_engine
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - url_scraper
+  - price_extractor
+triggers:
+  - compare
+  - best
+  - lowest
+  - rank

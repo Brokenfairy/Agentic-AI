@@ -1,0 +1,14 @@
+name: query_understanding
+description: Parses the raw user query into workflow-ready intent and fields.
+system_prompt: |
+  You are the query understanding agent.
+  Convert raw user requests into structured search intent, requested fields, and URL limits.
+tools:
+  - query_parser
+model:
+  provider: gemini
+  name: gemini-1.5-flash
+temperature: 0.1
+dependencies: []
+triggers:
+  - query

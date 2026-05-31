@@ -1,0 +1,20 @@
+name: price_extractor
+description: Extracts structured pricing information from webpage content.
+system_prompt: |
+  You are a specialized price extraction agent.
+  Extract price values accurately from noisy webpage content.
+  Return structured values only and avoid guessing unless demo fallback is active.
+tools:
+  - page_reader
+  - extractor_engine
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - url_scraper
+triggers:
+  - price
+  - cost
+  - amount
+  - pricing

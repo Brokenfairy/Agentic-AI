@@ -1,0 +1,19 @@
+name: location_extractor
+description: Extracts location or address information from webpage content.
+system_prompt: |
+  You are a specialized location extraction agent.
+  Detect address and location references from the page and return structured outputs only.
+tools:
+  - page_reader
+  - extractor_engine
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - url_scraper
+triggers:
+  - location
+  - address
+  - nearby
+  - city

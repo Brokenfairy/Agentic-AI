@@ -1,0 +1,22 @@
+name: specs_extractor
+description: Extracts product specifications from webpage content.
+system_prompt: |
+  You are a specialized specifications extraction agent.
+  Extract structured product specifications such as RAM, storage, processor, and battery.
+  Return structured outputs only.
+tools:
+  - page_reader
+  - extractor_engine
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - url_scraper
+triggers:
+  - specs
+  - specification
+  - ram
+  - processor
+  - storage
+  - battery

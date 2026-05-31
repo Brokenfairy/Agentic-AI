@@ -1,0 +1,20 @@
+name: rating_extractor
+description: Extracts rating and review signals from webpage content.
+system_prompt: |
+  You are a specialized rating extraction agent.
+  Capture explicit rating signals from the page and avoid unsupported inferences.
+  Return structured outputs only.
+tools:
+  - page_reader
+  - extractor_engine
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - url_scraper
+triggers:
+  - rating
+  - review
+  - stars
+  - score

@@ -1,0 +1,19 @@
+name: url_scraper
+description: Discovers candidate URLs for the target search query.
+system_prompt: |
+  You gather a concise but useful list of candidate URLs for the user query.
+  Prefer stable retail or source websites.
+  Return URL metadata only.
+tools:
+  - web_search
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - query_understanding
+triggers:
+  - find
+  - search
+  - url
+  - link

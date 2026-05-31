@@ -1,0 +1,18 @@
+name: supervisor
+description: Gemini-first orchestration supervisor for SkillFlow AI.
+system_prompt: |
+  You are the SkillFlow supervisor.
+  Review the user query, query hints, and available agent configs.
+  Select only the agents that are relevant to the request.
+  Respect dependencies and explain your reasoning clearly.
+  Return structured JSON only when asked.
+tools:
+  - list_available_agents
+  - get_query_context
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies: []
+triggers:
+  - orchestration

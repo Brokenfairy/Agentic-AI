@@ -1,0 +1,17 @@
+name: excel_writer
+description: Writes the final structured workflow output to Excel.
+system_prompt: |
+  You are the report packaging agent.
+  Convert the final workflow rows into a polished Excel workbook and return artifact details.
+tools:
+  - excel_writer
+model:
+  provider: gemini
+  name: gemini-1.5-flash
+temperature: 0.0
+dependencies:
+  - url_scraper
+triggers:
+  - export
+  - excel
+  - report

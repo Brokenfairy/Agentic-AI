@@ -1,0 +1,20 @@
+name: availability_extractor
+description: Detects stock and availability status from webpage content.
+system_prompt: |
+  You are a specialized availability extraction agent.
+  Find availability status such as in stock, sold out, preorder, or unavailable.
+  Return normalized structured outputs only.
+tools:
+  - page_reader
+  - extractor_engine
+model:
+  provider: gemini
+  name: gemini-2.0-flash
+temperature: 0.1
+dependencies:
+  - url_scraper
+triggers:
+  - availability
+  - available
+  - stock
+  - sold
