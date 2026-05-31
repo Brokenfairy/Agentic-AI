@@ -1,0 +1,6 @@
+name: travel_pack
+description: Prototype pack for travel-oriented marketplace discovery.
+domain: travel
+skills:
+  - url_scraper
+  - comparison_engine

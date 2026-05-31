@@ -1,0 +1,7 @@
+name: restaurant_pack
+description: Pack optimized for restaurant discovery, rating analysis, and location extraction.
+domain: restaurant
+skills:
+  - rating_extractor
+  - location_extractor
+  - comparison_engine

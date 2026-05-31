@@ -1,0 +1,6 @@
+name: finance_pack
+description: Prototype pack for finance and rate-comparison use cases.
+domain: finance
+skills:
+  - price_extractor
+  - comparison_engine

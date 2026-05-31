@@ -1,0 +1,9 @@
+name: ecommerce_pack
+description: Pack optimized for product discovery, price extraction, comparison, and reporting.
+domain: ecommerce
+skills:
+  - price_extractor
+  - rating_extractor
+  - availability_extractor
+  - specs_extractor
+  - comparison_engine

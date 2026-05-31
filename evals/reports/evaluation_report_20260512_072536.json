@@ -1,0 +1,649 @@
+{
+  "summary": {
+    "cases": 15,
+    "passed_cases": 15,
+    "avg_skill_precision": 0.83,
+    "avg_skill_recall": 0.97,
+    "avg_skill_f1": 0.89,
+    "avg_extraction_success_rate": 1.0,
+    "avg_confidence": 0.31,
+    "avg_reliability_score": 0.7
+  },
+  "cases": [
+    {
+      "query": "Find top 5 URLs for iPhone 15 and extract price and rating",
+      "category": "ecommerce",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.71,
+        "recall": 1.0,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 2,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.41,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "rating_extractor",
+        "specs_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Compare iPhone 15 prices across websites and rank the best deal",
+      "category": "price_comparison",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.83,
+        "recall": 1.0,
+        "f1_score": 0.91,
+        "correctly_selected": 5,
+        "incorrectly_selected": 1,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.26,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "comparison_engine",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find top 5 gaming laptops and extract specs and price",
+      "category": "laptops",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.71,
+        "recall": 1.0,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 2,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.34,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "specs_extractor",
+        "rating_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find top 5 gaming laptops under Rs 60000 and extract price, specs, discount, and warranty",
+      "category": "laptops",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.71,
+        "recall": 1.0,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 2,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.34,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "specs_extractor",
+        "rating_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find top 5 restaurants in Bangalore and extract rating and location",
+      "category": "restaurants",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.71,
+        "recall": 1.0,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 2,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.34,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "location_extractor",
+        "rating_extractor",
+        "price_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Compare top cafes in Bangalore by rating and location",
+      "category": "restaurants",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.86,
+        "recall": 1.0,
+        "f1_score": 0.92,
+        "correctly_selected": 6,
+        "incorrectly_selected": 1,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.41,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "location_extractor",
+        "rating_extractor",
+        "price_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find top 5 hotels in Goa and extract rating, location, and availability",
+      "category": "hotels",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "correctly_selected": 6,
+        "incorrectly_selected": 0,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.33,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "availability_extractor",
+        "location_extractor",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Compare hotel deals in Goa and identify the best available option",
+      "category": "hotels",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.71,
+        "recall": 1.0,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 2,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.23,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "availability_extractor",
+        "price_extractor",
+        "comparison_engine",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find top local businesses in Mumbai and extract location and rating",
+      "category": "local_business",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "correctly_selected": 5,
+        "incorrectly_selected": 0,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.41,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "location_extractor",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Compare washing machine prices and delivery estimate across stores",
+      "category": "ecommerce",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.83,
+        "recall": 0.83,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 1,
+        "missed_skills": 1
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.23,
+        "fallback_usage": 5,
+        "empty_fields": 5,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 0.5
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "comparison_engine",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find DSLR camera listings and extract price, rating, and seller trust",
+      "category": "ecommerce",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "correctly_selected": 5,
+        "incorrectly_selected": 0,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.23,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Compare office chair offers and identify discount and warranty details",
+      "category": "price_comparison",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.83,
+        "recall": 0.83,
+        "f1_score": 0.83,
+        "correctly_selected": 5,
+        "incorrectly_selected": 1,
+        "missed_skills": 1
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.23,
+        "fallback_usage": 5,
+        "empty_fields": 5,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 0.67
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "comparison_engine",
+        "rating_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find top 5 smartphones and extract specs, price, and availability confidence",
+      "category": "ecommerce",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "correctly_selected": 6,
+        "incorrectly_selected": 0,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.32,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "availability_extractor",
+        "price_extractor",
+        "specs_extractor",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Compare top restaurants in Delhi and rank them by rating",
+      "category": "restaurants",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.83,
+        "recall": 1.0,
+        "f1_score": 0.91,
+        "correctly_selected": 5,
+        "incorrectly_selected": 1,
+        "missed_skills": 0
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.21,
+        "fallback_usage": 5,
+        "empty_fields": 0,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 1.0
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "rating_extractor",
+        "price_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    },
+    {
+      "query": "Find laptop sellers and extract seller trust, delivery estimate, and rating",
+      "category": "laptops",
+      "passed": true,
+      "reasons": [],
+      "selection": {
+        "precision": 0.71,
+        "recall": 0.83,
+        "f1_score": 0.77,
+        "correctly_selected": 5,
+        "incorrectly_selected": 2,
+        "missed_skills": 1
+      },
+      "extraction": {
+        "extraction_success_rate": 1.0,
+        "avg_confidence": 0.35,
+        "fallback_usage": 5,
+        "empty_fields": 5,
+        "malformed_outputs": 0,
+        "extraction_failures": 0,
+        "completeness": 0.67
+      },
+      "reliability": {
+        "workflow_completion_pct": 1.0,
+        "retry_frequency": 0,
+        "recovery_success": 0.0,
+        "fallback_dependency": 1.0,
+        "node_failure_rate": 0.0,
+        "reliability_score": 0.7
+      },
+      "selected_skills": [
+        "query_understanding",
+        "url_scraper",
+        "price_extractor",
+        "rating_extractor",
+        "specs_extractor",
+        "comparison_engine",
+        "excel_writer"
+      ],
+      "result_count": 5,
+      "workflow_status": "completed"
+    }
+  ],
+  "failures": [],
+  "thresholds": {
+    "min_extraction_confidence": 0.2,
+    "max_retry_count": 2,
+    "min_urls_required": 3,
+    "max_workflow_time_seconds": 60,
+    "max_fallback_rate": 0.75,
+    "min_skill_precision": 0.7,
+    "min_skill_recall": 0.75,
+    "min_workflow_completion_rate": 0.9,
+    "fallback_min_extraction_confidence": 0.2,
+    "fallback_min_skill_precision": 0.7,
+    "fallback_min_skill_recall": 0.75,
+    "mode": "heuristic_fallback"
+  }
+}
